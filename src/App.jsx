@@ -104,10 +104,11 @@ function Hero({ role }) {
           <a href="#projects" className="btn-primary">View My Work</a>
           <a href="#contact" className="btn-outline">Get In Touch</a>
           <a
-            href="http://localhost:5000/api/cv/download"
-            download
-            className="btn-outline"
-            style={{display:'inline-flex',alignItems:'center',gap:6}}
+            href="https://yashasvis-portfolio.onrender.com/api/cv"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="btn-outline"
+             style={{display:'inline-flex',alignItems:'center',gap:6}}
           >
             📄 Download CV
           </a>
@@ -475,7 +476,7 @@ function Contact() {
     setStatus('loading')
     setFeedback('')
     try {
-      const res  = await fetch('http://localhost:5000/api/contact', {
+      const res  = await fetch('https://yashasvis-portfolio.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message }),
