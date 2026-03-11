@@ -3,9 +3,9 @@ const path    = require('path');
 const fs      = require('fs');
 const router  = express.Router();
 
-// GET /api/cv/download
+// GET /api/cv/
 // Place your CV file at: backend/assets/Yashasvi_Dixit_CV.pdf
-router.get('/download', (req, res) => {
+router.get('/', (req, res) => {
   const cvPath = path.join(__dirname, '..', 'assets', 'Yashasvi_Dixit_CV.pdf');
 
   if (!fs.existsSync(cvPath)) {

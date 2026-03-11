@@ -186,8 +186,8 @@ const projects = [
   num: '01',
   name: 'UrbanScout',
   tagline: 'Live events finder for Sydney, Australia',
-  desc: 'Aggregates live events across Sydney from multiple sources — Ticketek, Eventbrite, and What\'s On Sydney — into one clean discovery interface with category filtering and live search.',
-  details: 'Built with Next.js 14 App Router. Uses Cheerio for HTML scraping across 3 public event sources with a Ticketmaster API fallback. Features debounced live search, category filters (Music, Festival, Sport, Arts, Food, Film...), auto-refresh every 30 mins via ISR, and Google OAuth via NextAuth. Falls back to 12 rich mock events if scrapers are blocked.',
+  desc: 'Aggregates live events across Sydney from multiple sources — Ticketek, Eventbrite, and What\'s On Sydney into one clean discovery interface with category filtering and live search.',
+  details: 'Built with Next.js 14 App Router. Uses HTML scraping across 3 public event sources with a Ticketmaster API fallback. Features debounced live search, category filters (Music, Festival, Sport, Arts, Food, Film...), auto-refresh every 30 mins via ISR, and Google OAuth via NextAuth. Falls back to 12 rich mock events if scrapers are blocked.',
   stack: ['Next.js', 'NextAuth', 'Google OAuth', 'Ticketmaster API'],
   links: [
     { label: 'GitHub', url: 'https://github.com/Yashasviid/UrbanScout' },
